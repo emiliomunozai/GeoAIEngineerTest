@@ -68,7 +68,7 @@ You may use any OCR, image processing, or deep learning technique.
 ## 🚚 Submission Instructions
 
 Please submit your solution as a **public GitHub repository** with the following structure:
-
+'''
 your_name_GeoAITest/
 │
 ├── task1/ # Notebook or code for Task 1
@@ -76,10 +76,7 @@ your_name_GeoAITest/
 ├── task3/ # Notebook or code for Task 3
 ├── ppt/ # A brief presentation (max 6 slides)
 └── README.md # (Optional) notes on your implementation
-
-yaml
-Copiar
-Editar
+'''
 
 ### 📊 Presentation
 In the `ppt/` folder, include a short presentation (maximum 6 slides) that explains:
