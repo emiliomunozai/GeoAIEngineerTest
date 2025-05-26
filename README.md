@@ -71,10 +71,10 @@ Please submit your solution as a **public GitHub repository** with the following
 
 your_name_GeoAITest/\
 │\
-├── task1/ # Notebook or code for Task 1\
-├── task2/ # Notebook or code for Task 2\
-├── task3/ # Notebook or code for Task 3\
-├── ppt/ # A brief presentation (max 6 slides)\
+├── task1 / # Notebook or code for Task 1\
+├── task2 / # Notebook or code for Task 2\
+├── task3 / # Notebook or code for Task 3\
+├── .ppt # A brief presentation (max 6 slides)\
 └── README.md # (Optional) notes on your implementation\
 
 
