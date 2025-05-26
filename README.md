@@ -1,81 +1,99 @@
-GeoAI Engineer Technical Test
-Overview
-This technical test consists of three tasks designed to assess your ability to build AI-driven systems, automate information extraction, and apply computer vision techniques. You may use any programming language, AI tool, or platform you are comfortable with.
+# GeoAI Engineer Technical Test
 
-Task 1 – Automated Financial Report Extraction
-Objective:
-Build an AI or automation system to extract structured financial data from multiple annual reports.
+Welcome! This technical test is designed to evaluate your skills in automation, AI tooling, and geospatial analysis. It is divided into three independent tasks. You may use any programming language, tools, or AI models you are comfortable with.
 
-Details:
+---
 
-Automate the sourcing and parsing of financial data from all reports available from 2021 to 2024 at:
-https://torexgold.com/investors/financial-reports/
+## 📌 Overview
 
-Consolidate this information into a single Excel file with a structured format, including key metrics such as revenue, cost, profit, etc.
+You will:
+- Extract and standardize financial data from public reports.
+- Use AI tools to extract and classify images.
+- Apply computer vision techniques to detect coordinates in images.
 
-The format of reports may vary over the years. Your system should include:
+---
 
-A fallback mechanism to handle missing or inconsistent fields.
+## 📂 Tasks
 
-A standardization process to ensure the Excel file has a consistent schema.
+### ✅ Task 1 – Automated Financial Report Extraction
 
-Implement a validation mechanism that:
+**Goal:**  
+Build a process to automatically extract financial data from company reports.
 
-Checks the completeness and accuracy of the extracted data.
+**Instructions:**
+1. Go to the Torex Gold website:  
+   [https://torexgold.com/investors/financial-reports/](https://torexgold.com/investors/financial-reports/)
+2. Fetch all financial reports from **2021 to 2024**.
+3. Extract relevant financial metrics (e.g., revenue, operating cost, EBITDA, etc.) into a single **Excel file**.
+4. Reports may vary in format. Your solution must:
+   - Include a **fallback mechanism** to handle missing or inconsistent data.
+   - **Standardize** the output structure.
+5. Implement a **validation mechanism** that shows a **% accuracy** score indicating how complete and reliable the extracted data is (100% = fully addressed).
 
-Outputs a confidence or accuracy percentage, where 100% indicates a fully addressable report.
+---
 
-Task 2 – Image Extraction and Classification
-Objective:
-Use AI to extract and classify images from a document.
+### ✅ Task 2 – Image Extraction and Classification
 
-Details:
+**Goal:**  
+Use AI tools to extract and categorize images from a document.
 
-Given a document (file_XX.pdf), extract all embedded images using an AI model, tool, or any reliable method.
+**Instructions:**
+1. You will be provided with a document (`file_XX.pdf`).
+2. Extract all images from this file.
+3. Classify each image as either:
+   - **Map**
+   - **Table**
+4. Use any AI model or image classification approach (e.g., OpenAI, Gemini, Vision Transformers, etc.).
 
-Automatically classify each image into one of two categories:
+---
 
-Map
+### ✅ Task 3 – Geospatial Computer Vision
 
-Table
+**Goal:**  
+Apply computer vision to analyze geospatial images.
 
-You may use multimodal models (e.g., Gemini, GPT-4 Vision, or others) or build your own logic to perform this classification.
+**Instructions:**
+1. You will be given three images.
+2. For each image:
+   - Detect **any coordinate information** (e.g., latitude/longitude).
+   - Extract the relevant **segment of the image** that contains or is associated with those coordinates.
+3. You may use any OCR, image processing, or deep learning technique.
 
-Task 3 – Geospatial Computer Vision
-Objective:
-Extract coordinate data and relevant segments from imagery.
+---
 
-Details:
+## 🚚 Submission Instructions
 
-Analyze three provided geospatial images.
+Please submit your solution as a **public GitHub repository** with the following structure:
 
-Identify and extract any coordinates present in the images (e.g., latitude/longitude).
-
-Crop or segment the image based on those coordinates or geospatial features identified.
-
-Submission Instructions
-Create a public GitHub repository named:
-
-nginx
-Copiar
-Editar
-your_name_GeoAITest
-With the following structure:
-
-graphql
-Copiar
-Editar
 your_name_GeoAITest/
 │
-├── task1/        # Code or notebook for Task 1
-├── task2/        # Code or notebook for Task 2
-├── task3/        # Code or notebook for Task 3
-├── ppt/          # A brief presentation (max 6 slides)
-└── README.md     # (Optional) Setup or explanation notes
-Your presentation in ppt/ should:
+├── task1/ # Notebook or code for Task 1
+├── task2/ # Notebook or code for Task 2
+├── task3/ # Notebook or code for Task 3
+├── ppt/ # A brief presentation (max 6 slides)
+└── README.md # (Optional) notes on your implementation
 
-Summarize your approach for each task
+yaml
+Copiar
+Editar
 
-Highlight key results, tools used, and challenges
+### 📊 Presentation
+In the `ppt/` folder, include a short presentation (maximum 6 slides) that explains:
+- Your approach to each task
+- Tools and models used
+- Challenges and results
 
-Demonstrate your technical decision-making
+---
+
+## ✅ Evaluation Criteria
+
+We will assess:
+- Clarity and modularity of your code
+- Creativity and effectiveness of your approach
+- Robustness of fallback mechanisms
+- Accuracy and validation logic
+- Clarity of communication in your presentation
+
+---
+
+Good luck, and feel free to reach out with any clarifying questions!
